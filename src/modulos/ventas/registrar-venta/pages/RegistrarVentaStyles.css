@@ -1,0 +1,323 @@
+
+
+body {
+
+	min-height: 100%;
+}
+.contenedor {
+	width: 100%;
+	max-width: 100%;
+	/* margin: auto; */
+	padding: 0px 0;
+
+    /* Grid */
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+
+    flex-wrap: wrap;
+
+}
+
+.titulo {
+	font-size: 24px;
+	padding: 20px 0;
+}
+
+.contenedor-conciertos {
+	display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-rows: 1fr 4.5fr;
+    max-height: 100%;
+}
+
+.card1 {
+	border-radius: 0px;
+  /* border: solid; */
+	/* min-height: 100px; */
+	font-weight: bold;
+	padding: 8px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+  /* border-top: 1rem solid; */
+
+	/* Grid */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+}
+
+.card2 {
+	border-radius: 0px;
+  /* border: solid; */
+	/* min-height: 100px; */
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+  border-top: .5mm solid rgba(224, 224, 224, 0.6);
+
+	/* Grid */
+    /* display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px; */
+}
+
+.card3 {
+	border-radius: 0px;
+  /* border: solid; */
+	/* min-height: 100px; */
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+  /* border-top: .5mm solid rgba(224, 224, 224, 0.6); */
+
+	/* Grid */
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+
+.card .textos {
+	height: 100%;
+
+
+}
+
+.banner {
+	border-radius: 0px;
+	text-align: center;
+	padding: 8px;
+  height: auto;
+	background-size: cover;
+	background-position: center center;
+  border-left: .5mm solid rgba(224, 224, 224, 0.6);
+}
+
+.botonera {
+  width: 100%;
+  height: 100%;
+  grid-area: botones;
+  display: grid;
+
+  grid-template-areas: 
+            "c c b b"
+            "c c b b"
+            "c c b b"
+            "c c b b"
+            "c c a a"
+            "c c a a"
+            "c c a a"
+            "c c a a"
+            "inter inter inter inter"
+            "inter inter inter inter"
+            "inter inter inter inter"
+            "inter inter inter inter"
+            "inter inter inter inter"
+            "inter inter inter inter"
+            "inter inter inter inter"
+            "inter inter inter inter"
+            "inter inter inter inter"
+            "inter inter inter inter"
+            "inter inter inter inter"
+            "inter inter inter inter"
+            "inter inter inter inter"
+            "inter inter inter inter"
+            "gtotal gtotal gtotal gtotal"
+            "gtotal gtotal gtotal gtotal";
+  gap: 8px;
+}
+
+.diva {
+  background-color: #ffb731;
+  border-radius: 8px;
+  border: none;
+  color: #FFFFFF;
+  font-size: x-small;
+  transition: 0.3s ease-out;
+  grid-area: a;
+}
+
+.divb {
+  background-color: #ff725f;
+  border-radius: 8px;
+  border: none;
+  color: #FFFFFF;
+  font-size: x-small;
+  transition: 0.3s ease-out;
+  grid-area: b;
+}
+
+.divc {
+  background-color: initial;
+  background: #1fda86;
+  border-radius: 8px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size: medium;
+  text-align: center;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+  outline: none;
+  transition: 0.3s ease-out;
+  /* background-color: #4fdd67; */
+  grid-area: c;
+}
+
+.intermedio {
+  /* background-color: #ff725f; */
+  /* border: solid; */
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  /* color: #FFFFFF; */
+  font-size: x-small;
+  grid-area: inter;
+}
+
+.total {
+  /* background-color: #fff; */
+  background-color: hsl(217, 19%, 24%);
+  /* border: solid; */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  width: 100%;
+  
+  grid-area: gtotal;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  /* line-height: 2rem; */
+}
+
+.title-text {
+  margin-top: 8px;
+  margin-left: 1.5rem;
+  /* color: #374151; */
+  color: hsl(193, 38%, 86%);
+  font-size: 12px;
+}
+
+.percent {
+  margin-top: 8px;
+  margin-left: 0.5rem;
+  /* color: #B9101E; */
+  color: #dcdcaa;
+  font-weight: 600;
+  font-size: 15px;
+  display: flex;
+}
+
+.data {
+  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.data p {
+  margin-top: 0;
+  margin-bottom: 12px;
+  /* color: #1F2937; */
+  color: hsl(193, 38%, 86%);
+  font-size: 2rem;
+  line-height: 1rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+
+
+.diva:hover {
+  background: #f0a21b;
+  scale: 1.03;
+}
+
+.divb:hover:hover {
+  background: #ff4a32;
+  scale: 1.03;
+}
+
+.divc:hover {
+  background: #00bd68;
+  scale: 1.03;
+  /* background-color: #cc39a4; */
+}
+
+
+
+@media screen and (min-width: 1290px) {
+  
+  .contenedor-conciertos {
+    grid-template-rows: 1fr 8.9fr;
+  }
+
+  .diva {
+    font-size: medium;
+  }
+
+  .divb {
+    font-size: medium;
+  }
+
+  .divc {
+    font-size: large;
+  }
+
+  
+}
+
+@media screen and (max-width: 700px) {
+
+}
+
+@media screen and (max-width: 900px) {
+
+}
+
+
+
+
+/* CSS */
+.button-41 {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #00D775, #00BD68);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 44px;
+  line-height: 44px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 9;
+  border: 0;
+}
+
+.button-41:hover {
+  background: #00bd68;
+}
